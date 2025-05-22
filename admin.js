@@ -54,7 +54,7 @@ const imageData= new FormData();
 imageData.append("image",file);
 console.log([...imageData.entries()]);
 //sending a POST request to the backend API to upload product details
-fetch("https://breidde3065.github.io/myEvergreen/uploads",{
+fetch("https://evergreendb.glitch.me/uploads",{
     method:"POST",//using POST method to send data to the backend
     body:imageData, //sends imagedata object which contains image
 })
@@ -67,7 +67,7 @@ if(!imageUrl)
 
 }
 
-return fetch("http://localhost:5000/products",{
+return fetch("https://evergreendb.glitch.me/products",{
    method:"POST",
 headers:{"Content-Type":"application/json"},
    body: JSON.stringify({
@@ -109,7 +109,7 @@ headers:{"Content-Type":"application/json"},
 }
 function deleteProduct(id){
     if(confirm("Are you sure you want to delete this product?")){
-        fetch(`http://localhost:5000/products/${id}`,{method: "DELETE"})
+        fetch(`https://evergreendb.glitch.me/products/${id}`,{method: "DELETE"})
         .then(response=>response.json())
         .then(data=>{
             alert(data.message);
@@ -125,7 +125,7 @@ function deleteProduct(id){
 }
 
 function fetchProducts() {
-    fetch("http://localhost:5000/products")
+    fetch("https://evergreendb.glitch.me/products")
         .then(response =>{ 
             
            if (!response.ok){
@@ -222,7 +222,7 @@ function editProduct(id,currentimageUpload,currentTitle,currentDescription,curre
 const newPrice=prompt("Enter price:",currentPrice);
 
     if(newimageUpload !==null && newTitle.trim() !== null&& newDescription.trim() !==null && newPrice !== null){
-        fetch(`http://localhost:5000/products/${id}`,{
+        fetch(`https://evergreendb.glitch.me/products/${id}`,{
             method:"PUT",
             headers:{"Content-Type":"application/json"},
             body: JSON.stringify({imageUpload:newimageUpload,title:newTitle, description:newDescription,price:newPrice}),
