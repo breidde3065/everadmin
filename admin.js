@@ -54,7 +54,7 @@ const imageData= new FormData();
 imageData.append("image",file);
 console.log([...imageData.entries()]);
 //sending a POST request to the backend API to upload product details
-fetch("https://evergreendb.glitch.me/uploads",{
+fetch("https://breidde3065.github.io/myEvergreen/uploads",{
     method:"POST",//using POST method to send data to the backend
     body:imageData, //sends imagedata object which contains image
 })
