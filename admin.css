@@ -19,7 +19,7 @@ body{
     align-items: center;
     padding: 20px;
 }
-#navbar{
+.navbar{
     display:flex;
     color:#ff5733;
     padding:15px;
