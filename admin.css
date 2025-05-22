@@ -19,6 +19,31 @@ body{
     align-items: center;
     padding: 20px;
 }
+.navclass{
+    background color:#0cf136;
+    color:#ff5733;
+    padding:0px;
+
+    box-sizing:border-box;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+}
+.navbtn{
+    box-sizing:content-box;
+    border-radius:10px;
+    background-color:#0cf136;
+    cursor:pointer;
+    border:none;
+}
+.navbtn:hover{
+    background:#fcfbfa;
+    color:black;
+    transition:0.1s ease-in;
+}
 .form-group{
     margin-bottom: 20px;
 }
