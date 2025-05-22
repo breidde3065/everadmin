@@ -1,0 +1,37 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Admin@ecostoves</title>
+            <link rel="stylesheet" href="admin.css">
+        </head>
+        <body>
+            <div id="adminpanel">
+                <h2>Admin Panel</h2>
+                <form >
+                <div class="form-group column">
+                    <label for="imageUpload">Upload Image:</label>
+                    <input type="file" id="imageUpload" accept="image/*">
+                    <div class="image-preview" id="imagePreview">Preview</div>
+                </div>
+                <div class="form-group column">
+                    <label for="title">Title:</label>
+                    <textarea  id="Title" placeholder="enter title"></textarea>
+                </div>
+                <div class="form-group column">
+                    <label for="description">Description:</label>
+                    <textarea  id="description" placeholder="enter description"></textarea>
+                </div>
+                <div class="form-group column">
+                    <label for="price">Price:</label>
+                    <textarea  id="price" placeholder="enter price"></textarea>
+                </div>
+                <button class="uploadbtn" id="uploadbtn" >Upload</button>
+            </form>
+            <h3>Existing Products</h3>
+            <ul id="productlist"></ul>
+            </div>
+            <script src="admin.js"></script>
+        </body>
+        </html>
