@@ -19,10 +19,19 @@ body{
     align-items: center;
     padding: 20px;
 }
+navbar{
+    display:flex;
+    color:#ff5733;
+    padding:15px;
+    box-sizing:border-box;
+    border-top:15px;
+    border-radius:20px;
+    background-color:floralwhite;
+}
 .navclass{
     background color:#0cf136;
     color:#ff5733;
-    padding:0px;
+    padding:10px;
 
     box-sizing:border-box;
     position:fixed;
