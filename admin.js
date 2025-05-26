@@ -159,7 +159,7 @@ if(Array.isArray(products)){
                lidescription.textContent=product.description;
 
                const liprice=document.createElement("p");
-               liprice.textContent=`Price:$${product.price}`;
+               liprice.textContent=`Price:Kes ${product.price}`;
 
                
             
